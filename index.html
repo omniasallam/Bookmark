@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:ital,wght@0,700;0,800;1,600&family=Pacifico&family=Righteous&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Bookmark</title>
+    
+</head>
+<body>
+   <main id="interface" class="vh-100 d-flex justify-content-center align-items-center">
+    <div class="container  w-75 border rounded-2 ">
+       <div class="head text-center pt-4 position-relative">
+         <h1>Bookmarker</h1>
+       </div>
+        <div class="bookmark-body pb-4">
+            <h2 class="text-center mb-5 mt-3  ">
+                 <i class="fa-solid fa-bookmark"></i> 
+                Bookmark your favorite sites
+                <i class="fa-solid fa-bookmark"></i> 
+            </h2>
+            <div class="site">
+                <div class="sit-name">
+                    <span class="pe-2"><i class="fa-solid fa-book-bookmark "></i></span>  
+                <label for="siteName" class="fw-semibold">Site Name</label>
+                <input  type="text" class="form-control mb-4 mt-3" id="siteName" placeholder="Bookmark Name">
+                </div>
+              <div class="site-url">
+                <span class="pe-1"><i class="fa-solid fa-link"></i> </span>
+                <label for="siteUrl" class="fw-semibold">Site URL</label>
+                <input type="text" class="form-control mb-4 mt-3 " id="siteUrl" placeholder="Website URL">
+                
+              </div>
+                  
+                <div class="button d-flex justify-content-center align-items-center">
+                    <button class=" btn btn-danger px-5 " onclick="addData();" id="SubmitBtn"> Submit</button>
+                </div>
+            </div>
+            </div>
+        
+        <div class=" mx-auto my-3 mt-3">
+            <table class="table text-center">
+                <thead>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th> Visit</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="tableBody">
+                   
+                </tbody>
+            </table>
+        </div>
+    </div>
+   
+   </main>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
